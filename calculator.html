@@ -17,13 +17,22 @@
                 <input type="text" id="number1">
                 <input type="text" id="number2">
                 <button type="button" id="addButton" class="btn btn-light">operation:</button>
-                <input type="text" id="operation">
+                <select id="operation_list">
+                    <option value="add">add</option>
+                    <option value="substract">substract</option>
+                    <option value="multiply">multiply</option>
+                    <option value="divide">divide</option>
+                </select>
+                <!-- <input type="text" id="operation"> -->
             </div>    
-            <div class="box" id="output">
+            <div class="box" id="output" style="border-color: black; border: 10px; width: 100px; height: 20px">
             </div>
         </div>
             
+        <div id="calc-div"></div>
         <script type="text/javascript" src="./event-listeners.js"></script>
+        <script type="text/javascript" src="./reusable_component.js"></script>
+
     </body>
 
 

@@ -17,7 +17,7 @@ function htmlCalcListener() {
     }
 
     var operation;
-    var pre_operation = document.getElementById("operation").value;
+    var pre_operation = document.getElementById("operation_list").value;
     if (pre_operation == '') {
         operation = undefined;
     } else {
@@ -34,3 +34,4 @@ function htmlCalcListener() {
 
 var operator_button = document.getElementById("addButton");
 operator_button.addEventListener("click", htmlCalcListener);
+
